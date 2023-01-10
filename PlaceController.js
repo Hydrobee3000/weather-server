@@ -3,6 +3,8 @@ import Place from './Place.js'
 // logic of actions with place
 
 class PlaceController {
+  /* post place */
+
   // post
   async create(req, res) {
     try {
