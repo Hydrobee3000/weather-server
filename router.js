@@ -4,9 +4,9 @@ import PlaceController from './PlaceController.js' // logic of actions with plac
 const router = Router()
 
 router.post('/places', PlaceController.create) // create
-router.get('/places/:id') // read all
-router.get('/places/:id') // read one
-router.put('/places') // update
-router.delete('/places/:id') // delete
+router.get('/places/', PlaceController.getAll) // read all
+router.get('/places/:id', PlaceController.get) // read one
+router.put('/places', PlaceController.update) // update
+router.delete('/places/:id', PlaceController.delete) // delete
 
 export default router
