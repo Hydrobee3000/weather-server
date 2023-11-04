@@ -3,9 +3,8 @@ import Place from './Place.js'
 // logic of actions with place
 
 class PlaceController {
-  /* post place */
+  /* add place */
 
-  // post
   async create(req, res) {
     try {
       const { userId, content } = req.body // get params from body request
@@ -18,7 +17,8 @@ class PlaceController {
     }
   }
 
-  // get all places
+  /* get all places */
+
   async getAll(req, res) {
     try {
       const places = await Place.find() // get all records
