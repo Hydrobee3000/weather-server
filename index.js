@@ -10,10 +10,6 @@ const app = express()
 app.use(express.json()) // to convert json format
 app.use('/api', router) // register route
 
-// app.get('/', (req, res) => {
-//   res.status(200).json('Сервер работает')
-// })
-
 async function startApp() {
   try {
     await mongoose.connect(DB_URL) // connection to mongoDB
